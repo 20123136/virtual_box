@@ -1,0 +1,60 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box-son {
+    background-color: #383535;
+    border-radius: 8px;
+    box-shadow: 2px 4px 5px rgba(255, 255, 255, .6) inset;
+
+    height: 50%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_red, .btn_green {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, .8) inset;
+}
+
+.btn_green {
+    background-color: green;
+    display: none;
+}
+
+.box-padding {
+    padding: 1rem 2rem;
+    height: 100%;
+    margin-right: 0 !important;
+}
+
+.card:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+.btn-center {
+    text-align: right;
+}
+
