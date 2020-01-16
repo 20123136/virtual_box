@@ -3,6 +3,29 @@ html, body {
     height: 100%;
 }
 
+
+.hx-task, .call-box{
+    height: 100%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content .item{
+    border-radius: 8px;
+    box-shadow: 2px 4px 5px rgba(255, 255, 255, .6) inset;
+
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
 .box{
     width: 100%;
     height: 100%;
@@ -27,8 +50,8 @@ html, body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
+    width: 10rem;
+    height: 10rem;
     background-color: red;
     border-radius: 50%;
     border: 2px solid #000;
@@ -48,10 +71,6 @@ html, body {
 
 .card:not(:first-child) {
     margin-top: 1rem;
-}
-
-.form-group {
-    margin-bottom: 0 !important;
 }
 
 .btn-center {
