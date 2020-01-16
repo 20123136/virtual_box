@@ -13,95 +13,91 @@
 
 <body>
 <div class="row box-padding">
-    <div class="col-md-5 hx-task">
-        <div class="content">
-            <div class="item">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        HANXIN
+    <div class="col-md-5">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                HANXIN
+            </div>
+            <div class="panel-body">
+                <form class="col-sm-12 form-horizontal" id="hanxin">
+                    <div class="form-group">
+                        <label for="hanxin_ip" class="col-sm-4 col-form-label">hanxin ip</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="hanxin_ip" placeholder="ip" name="hanxin_ip">
+                        </div>
                     </div>
-                    <div class="panel-body">
-                        <form class="col-sm-12 form-horizontal" id="hanxin">
-                            <div class="form-group">
-                                <label for="hanxin_ip" class="col-sm-4 col-form-label">hanxin ip</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control  input-lg" id="hanxin_ip" placeholder="ip" name="hanxin_ip">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="hanxin_port" class="col-sm-4 col-form-label">port</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control  input-lg" id="hanxin_port"
-                                           placeholder="端口号" name="hanxin_port">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                            </div>
-                            <div class="btn-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Add</button>
-                            </div>
-                        </form>
+                    <div class="form-group">
+                        <label for="hanxin_port" class="col-sm-4 col-form-label">port</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="hanxin_port"
+                                   placeholder="端口号" name="hanxin_port">
+                        </div>
                     </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        TASK
+                    <div class="form-group">
                     </div>
-                    <div class="panel-body">
-                        <form class="col-sm-12 form-horizontal" id="task">
-                            <div class="form-group">
-                                <label for="start" class="col-sm-4 col-form-label">start</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control  input-lg" id="start" placeholder="任务起点"
-                                           name="start">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="start-action" class="col-sm-4 col-form-label">startAction</label>
-                                <div class="col-sm-8">
-                                    <select class="form-control  input-lg" id="start-action" name="start-action">
-                                        <option value="0">Blank</option>
-                                        <option value="5">Straight UP</option>
-                                        <option value="6">Straight Down</option>
-                                        <option value="10">Charging</option>
-                                        <option value="11">Back UP</option>
-                                        <option value="12">Back Down</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="goal" class="col-sm-4 col-form-label">goal</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control  input-lg" id="goal" placeholder="任务终点"
-                                           name="goal">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="goal-action" class="col-sm-4 col-form-label">goalAction</label>
-                                <div class="col-sm-8">
-                                    <select class="form-control  input-lg" id="goal-action" name="goal-action">
-                                        <option value="0">Blank</option>
-                                        <option value="5">Straight UP</option>
-                                        <option value="6">Straight Down</option>
-                                        <option value="10">Charging</option>
-                                        <option value="11">Back UP</option>
-                                        <option value="12">Back Down</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="preassignment" class="col-sm-4 col-form-label">preassignment</label>
-                                <div class="col-sm-8">
-                                    <select class="form-control  input-lg" id="preassignment" name="preassignment">
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="btn-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Add</button>
-                            </div>
-                        </form>
+                    <div class="btn-center">
+                        <button type="submit" class="btn btn-primary">Add</button>
                     </div>
-                </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                TASK
+            </div>
+            <div class="panel-body">
+                <form class="col-sm-12 form-horizontal" id="task">
+                    <div class="form-group">
+                        <label for="start" class="col-sm-4 col-form-label">start</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="start" placeholder="任务起点"
+                                   name="start">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="start-action" class="col-sm-4 col-form-label">startAction</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="start-action" name="start-action">
+                                <option value="0">Blank</option>
+                                <option value="5">Straight UP</option>
+                                <option value="6">Straight Down</option>
+                                <option value="10">Charging</option>
+                                <option value="11">Back UP</option>
+                                <option value="12">Back Down</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal" class="col-sm-4 col-form-label">goal</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="goal" placeholder="任务终点"
+                                   name="goal">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal-action" class="col-sm-4 col-form-label">goalAction</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="goal-action" name="goal-action">
+                                <option value="0">Blank</option>
+                                <option value="5">Straight UP</option>
+                                <option value="6">Straight Down</option>
+                                <option value="10">Charging</option>
+                                <option value="11">Back UP</option>
+                                <option value="12">Back Down</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="preassignment" class="col-sm-4 col-form-label">preassignment</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="preassignment" name="preassignment">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-center">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
