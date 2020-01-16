@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('#preassignment').val(task_info.preassignment)
     realtimeRefresh()
   }
+
   init()
 
   function realtimeRefresh() {
@@ -170,44 +171,44 @@ $(document).ready(function () {
       }
     })
   })
-  $('#hanxin')
-    .bootstrapValidator({
-      feedbackIcons: {
-        valid: 'glyphicon glyphicon-ok',
-        invalid: 'glyphicon glyphicon-remove',
-        validating: 'glyphicon glyphicon-refresh'
-      },
-      fields: {
-        hanxin_ip: {
-          validators: {
-            notEmpty: {
-              message: 'IP不能为空'
-            },
-            ip: {
-              ipv4: true,
-              message: '请输入合法ip'
-            }
+
+  $('#hanxin').bootstrapValidator({
+    feedbackIcons: {
+      valid: 'glyphicon glyphicon-ok',
+      invalid: 'glyphicon glyphicon-remove',
+      validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+      hanxin_ip: {
+        validators: {
+          notEmpty: {
+            message: 'IP不能为空'
+          },
+          ip: {
+            ipv4: true,
+            message: '请输入合法ip'
           }
-        },
-        hanxin_port: {
-          validators: {
-            notEmpty: {
-              message: '端口不能为空'
-            },
-            between: {
-              min: 1,
-              max: 65535,
-              message: '端口范围：1~65535'
-            },
-            digits: {
-              message: '只能输入数字'
-            }
+        }
+      },
+      hanxin_port: {
+        validators: {
+          notEmpty: {
+            message: '端口不能为空'
+          },
+          between: {
+            min: 1,
+            max: 65535,
+            message: '端口范围：1~65535'
+          },
+          digits: {
+            message: '只能输入数字'
           }
         }
       }
-    })
-    .on('success.field.bv', function (e, data) {
-      console.log('222222')
+    }
+  })
+    .on("success.form.bv", function (e) {
+      // Prevent form submission 即阻止表单提交数据
       e.preventDefault()
       // $(e.target)  --> The field element
       // data.bv      --> The BootstrapValidator instance
@@ -217,7 +218,6 @@ $(document).ready(function () {
       localStorage.setItem('hanxin_ip', $('#hanxin_ip').val())
       localStorage.setItem('hanxin_port', $('#hanxin_port').val())
       alert("添加成功")
-
     });
 
 
@@ -262,7 +262,7 @@ $(document).ready(function () {
         }
       }
     })
-    .on('success.field.bv', function (e, data) {
+    .on('success.form.bv', function (e, data) {
       console.log('222222')
       e.preventDefault()
       // $(e.target)  --> The field element
